@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    overflow-x: auto; /* 수평 스크롤 허용 */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 수평 정렬 */
+    width: 100%;
+    min-width: 1340px; /* 최소 너비를 고정 */
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1340px; /* 고정된 최대 너비 */
+    padding: 0 50px;
+    border-bottom: 1px solid #000000;
+  }
+  
+  .nav-section {
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .logo, .user-actions {
+    width: 300px;
+  }
+  
+  .logo, .category, .user-actions {
+    display: flex;
+    justify-content: center; /* 내용이 수평 가운데 정렬되도록 설정 */
+  }
+  
+  .category {
+    width: 680px; /* 카테고리의 고정된 너비 설정 */
+    font-size: 22px;
+  }
+  
+  .user-actions{
+    font-size: 16px;
+  }
+  
+  .logo h1 {
+    font-size: 27px;
+  }
+  
+  .category ul,
+  .user-actions ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .category ul{
+    gap: 40px;
+  }
+  
+  .user-actions ul{
+    gap: 20px;
+  }
+  
+  .category ul li a,
+  .user-actions ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  main {
+    flex-grow: 1;
+    width: 100%;
+    max-width: 1340px; /* 고정된 최대 너비 */
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1340px; /* 고정된 최대 너비 */
+    padding: 10px 50px;
+    border-top: 1px solid #000000;
+  }
+  
+  .contact-info p {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  .social-media a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  
